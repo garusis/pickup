@@ -60,16 +60,7 @@ function Pickup (opts) {
   }
 
   this.encoding = encodingFromOpts(opts)
-  this._decoder = null
-
-  Object.defineProperty(this, 'decoder', {
-    get: () => {
-      if (!this._decoder) {
-        this._decoder = new StringDecoder(this.encoding)
-      }
-      return this._decoder
-    }
-  })
+  this.decoder = new StringDecoder(this.encoding)
 
   this.eventMode = opts && opts.eventMode
   this.map = null
