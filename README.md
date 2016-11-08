@@ -33,7 +33,7 @@ $ curl -sS $URL | pickup | json -ga title
 #### Transform from stdin to stdout
 
 ```js
-var pickup = require('pickup')
+const pickup = require('pickup')
 
 process.stdin
   .pipe(pickup())
@@ -49,11 +49,11 @@ $ curl -sS $URL | node example/stdin.js | json -g
 #### Proxy server
 
 ```js
-var http = require('http')
-var pickup = require('pickup')
+const http = require('http')
+const pickup = require('pickup')
 
-http.createServer(function (req, res) {
-  http.get('http:/'.concat(req.url), function (feed) {
+http.createServer((req, res) => {
+  http.get('http:/'.concat(req.url), (feed) => {
     feed.pipe(pickup()).pipe(res)
   })
 }).listen(8080)

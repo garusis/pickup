@@ -88,7 +88,7 @@ function Pickup (opts) {
 
     if (!current || !map) return
 
-    var key = map[name]
+    var key = map.get(name)
     if (state.image && name === 'url') key = 'image'
 
     var isSet = current[key] !== undefined
@@ -114,7 +114,7 @@ function Pickup (opts) {
     handle(name, Pickup.openHandlers)
     var current = me.current()
     if (current) {
-      var key = me.map[name]
+      var key = me.map.get(name)
       if (key) {
         var attributes = node.attributes
         var keys = Object.keys(attributes)
