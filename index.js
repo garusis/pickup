@@ -215,7 +215,7 @@ function cribEncoding (str) {
 // TODO: Find/write a module that detects character encodings
 // https://www.w3.org/TR/REC-xml/#sec-guessing
 
-// O.K, here’s how it should work. In the most common use case, we receive the
+// O.K, here’s how it should work: In the most common use case, we receive the
 // encoding via the Content-Type HTTP header and pass it to our constructor. If we
 // we don't know the encoding upfront, our parser has to use the BOM, so it can
 // reliably read the encoding tag. If no BOM is available use ASCII to read the tag.
