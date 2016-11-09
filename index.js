@@ -241,10 +241,6 @@ Pickup.prototype._transform = function (chunk, enc, cb) {
   cb(er)
 }
 
-// TODO: Remove duration property
-//
-// I don’t know, but the duration property seems pretty much useless in practice.
-
 function Entry (
   author
 , enclosure
