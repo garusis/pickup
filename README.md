@@ -18,7 +18,7 @@ $ npm install -g json
 Now you can pipe **pickup** to **json**:
 
 ```
-$ export URL=troubled.pro/rss.xml
+$ export URL=www.newyorker.com/feed/posts
 $ curl -sS $URL | pickup | json -g
 ```
 
@@ -63,7 +63,7 @@ To try the proxy server:
 
 ```
 $ node example/proxy.js &
-$ curl -sS http://localhost:8080/$URL | json -g
+$ curl -sS http://localhost:8080/$URL | json -ga title
 ```
 
 ## Types
