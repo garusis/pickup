@@ -4,8 +4,3 @@ node_js:
   - "4"
   - "6"
   - "7"
-branches:
-  only:
-    - master
-  except:
-    - /^v[0-9]/
