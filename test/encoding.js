@@ -1,3 +1,5 @@
+'use strict'
+
 // encoding - test encoding detection
 
 const test = require('tap').test

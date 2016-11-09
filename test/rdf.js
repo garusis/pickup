@@ -1,3 +1,5 @@
+'use strict'
+
 // parse crazy rdf from way back when
 
 const parse = require('./lib/parse')

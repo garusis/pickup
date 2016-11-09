@@ -1,3 +1,5 @@
+'use strict'
+
 // feed_link - pick correct URI
 
 // The point here is to make sure we pick the URI of the site,

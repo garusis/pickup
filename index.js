@@ -1,3 +1,5 @@
+'use strict'
+
 // pickup - transform RSS or Atom XML to JSON
 
 exports = module.exports = Pickup

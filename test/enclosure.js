@@ -1,3 +1,5 @@
+'use strict'
+
 // parse <enclosure />
 
 const fs = require('fs')

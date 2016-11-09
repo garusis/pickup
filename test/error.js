@@ -1,3 +1,5 @@
+'use strict'
+
 // We are not really interested in the errors, but we must end correctly.
 
 const test = require('tap').test

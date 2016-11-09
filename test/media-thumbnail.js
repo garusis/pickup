@@ -1,3 +1,5 @@
+'use strict'
+
 // parse <media:thumbnail/>
 
 const parse = require('./lib/parse')

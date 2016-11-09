@@ -1,3 +1,5 @@
+'use strict'
+
 // parse feed image
 
 const parse = require('./lib/parse')

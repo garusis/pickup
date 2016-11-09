@@ -1,3 +1,5 @@
+'use strict'
+
 // summary overrides description
 
 const parse = require('./lib/parse')

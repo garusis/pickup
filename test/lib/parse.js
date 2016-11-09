@@ -1,3 +1,5 @@
+'use strict'
+
 // parse - parse xml and test events
 
 module.exports = parse
